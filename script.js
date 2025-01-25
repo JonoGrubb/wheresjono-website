@@ -12,39 +12,45 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const starIcon = L.divIcon({
   html: '⭐',
   className: 'star-icon',
-  iconSize: [20, 20],
-  iconAnchor: [10, 10],
-  popupAnchor: [0, -10]
+  iconSize: [40, 40],
+  iconAnchor: [20, 20],
+  popupAnchor: [0, -20]
 });
 
-// Fetch and display current location
-fetch('data/currentLocation.json')
-  .then(response => response.json())
-  .then(currentLocation => {
-    const marker = L.marker([currentLocation.lat, currentLocation.lng], {
-      icon: starIcon
-    }).addTo(map);
-    marker.bindPopup(
-      `<strong>${currentLocation.name}</strong><br>
-      ${currentLocation.description}<br>
-      Last updated: ${new Date(currentLocation.lastUpdate).toLocaleDateString()}`
-    );
-  })
-  .catch(error => {
-    console.error('Error loading current location:', error);
-  });
+// Load both files and process after both are loaded
+Promise.all([
+  fetch('data/currentLocation.json').then(response => response.json()),
+  fetch('data/locations.json').then(response => response.json())
+])
+.then(([currentLocation, locations]) => {
+  // Add current location marker first
+  const currentLocationMarker = L.marker([currentLocation.lat, currentLocation.lng], {
+    icon: starIcon,
+    zIndexOffset: 1000
+  }).addTo(map);
+  
+  currentLocationMarker.bindPopup(
+    `<strong>${currentLocation.name}</strong><br>
+    ${currentLocation.description}<br>
+    Last updated: ${new Date(currentLocation.lastUpdate).toLocaleDateString()}`
+  );
 
-// Fetch location history
-fetch('data/locations.json')
-  .then(response => response.json())
-  .then(locations => {
-    locations.forEach(location => {
-      // Create a marker
+  // Add other locations, checking for overlap
+  locations.forEach(location => {
+    const currentLatLng = currentLocationMarker.getLatLng();
+    const distance = currentLatLng.distanceTo(L.latLng(location.lat, location.lng));
+    
+    console.log(`Distance from current location to ${location.name}: ${distance.toFixed(2)}m`);
+    
+    // Only add marker if it's not too close
+    if (distance >= 25000) {
       const marker = L.marker([location.lat, location.lng]).addTo(map);
-      // Attach a popup
       marker.bindPopup(`<strong>${location.name}</strong><br>${location.description}`);
-    });
-  })
-  .catch(error => {
-    console.error('Error loading locations:', error);
+    } else {
+      console.log(`Skipping marker for ${location.name} - too close to current location`);
+    }
   });
+})
+.catch(error => {
+  console.error('Error loading data:', error);
+});
