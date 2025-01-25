@@ -1,1 +1,1 @@
-# wheres-jono-website
+Static Site for Where's Jono Map
