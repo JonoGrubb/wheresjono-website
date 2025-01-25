@@ -798,13 +798,6 @@
     "lastVisitDate": "Monday, July 24, 2023"
   },
   {
-    "name": "Sunshine Coast, BC",
-    "lat": 49.7604377,
-    "lng": -123.7643986,
-    "description": "",
-    "lastVisitDate": "Saturday, July 30, 2022"
-  },
-  {
     "name": "Tehachapi, California",
     "lat": 35.1321877,
     "lng": -118.4489739,
@@ -868,7 +861,7 @@
     "lastVisitDate": "Sunday, October 23, 2022"
   },
   {
-    "name": "Washington D.C., D.C.",
+    "name": "Washington, D.C.",
     "lat": 38.9071923,
     "lng": -77.0368707,
     "description": "",
@@ -2068,6 +2061,27 @@
     "name": "Bogota, Colombia",
     "lat": 4.7109886,
     "lng": -74.072092,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "McCall, Idaho",
+    "lat": 44.9109217,
+    "lng": -116.0989964,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Burns, Oregon",
+    "lat": 43.5862989,
+    "lng": -119.0558334,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "La Grande, Oregon",
+    "lat": 45.3245771,
+    "lng": -118.0877188,
     "description": "",
     "lastVisitDate": ""
   }
