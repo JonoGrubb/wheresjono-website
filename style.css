@@ -3,31 +3,66 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  /* Base font size for better mobile readability */
+  font-size: 16px;
 }
 
 #map {
     width: 100%;
     /* The map needs some height to become visible */
-    height: calc(100% - 50px);
+    height: calc(100% - 60px); /* Slightly more space for header on mobile */
   }
 
 h1 {
   text-align: center;
-  margin: 10px 0;
+  margin: 15px 0;
+  font-size: 1.8rem; /* Using rem for responsive font sizing */
 }
 
 .star-icon {
   width: 40px;
   height: 40px;
-  /* Center the star within the div */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Adjust the positioning relative to the actual location point */
-  margin-left: -20px;  /* equivalent to iconAnchor[0] */
-  margin-top: -20px;   /* equivalent to iconAnchor[1] */
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.star-icon span {
+  font-size: 32px; /* Base size for desktop */
 }
 
 .star-icon + .leaflet-popup {
   margin-bottom: 20px; /* equivalent to popupAnchor[1] */
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 18px; /* Larger base font size for mobile */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin: 12px 0;
+  }
+
+  .star-icon {
+    width: 48px;
+    height: 48px;
+    margin-left: -32px;
+    margin-top: -32px;
+  }
+
+  .star-icon span {
+    font-size: 36px; /* Larger size for mobile */
+  }
+
+  /* Make popup content more readable on mobile */
+  .leaflet-popup-content {
+    font-size: 1.1rem;
+    padding: 5px;
+  }
 }

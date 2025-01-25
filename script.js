@@ -10,8 +10,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Create a star icon for current location
 const starIcon = L.divIcon({
-  html: '⭐',
-  className: 'star-icon'
+  html: '<span>⭐</span>',
+  className: 'star-icon',
+  iconSize: null,    // Let CSS handle the sizing
+  iconAnchor: null,  // Let CSS handle the positioning
+  popupAnchor: [0, -20]
 });
 
 // Load both files and process after both are loaded
