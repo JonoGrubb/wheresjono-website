@@ -41,17 +41,28 @@ Promise.all([
   // Add other locations, checking for overlap
   locations.forEach(location => {
     const currentLatLng = currentLocationMarker.getLatLng();
-    const distance = currentLatLng.distanceTo(L.latLng(location.lat, location.lng));
     
-    console.log(`Distance from current location to ${location.name}: ${distance.toFixed(2)}m`);
-    
-    // Only add marker if it's not too close
-    if (distance >= 25000) {
-      const marker = L.marker([location.lat, location.lng]).addTo(map);
-      marker.bindPopup(`<strong>${location.name}</strong><br>${location.description}`);
-    } else {
-      console.log(`Skipping marker for ${location.name} - too close to current location`);
-    }
+    // Create array of wrapped longitudes
+    const wrappedLongitudes = [
+      location.lng,
+      location.lng - 360,
+      location.lng + 360
+    ];
+
+    wrappedLongitudes.forEach(wrappedLng => {
+      const wrappedLatLng = L.latLng(location.lat, wrappedLng);
+      const distance = currentLatLng.distanceTo(wrappedLatLng);
+      
+      console.log(`Distance from current location to ${location.name} (lng: ${wrappedLng}): ${distance.toFixed(2)}m`);
+      
+      // Only add marker if it's not too close
+      if (distance >= 25000) {
+        const marker = L.marker([location.lat, wrappedLng]).addTo(map);
+        marker.bindPopup(`<strong>${location.name}</strong><br>${location.description}`);
+      } else {
+        console.log(`Skipping marker for ${location.name} at lng ${wrappedLng} - too close to current location`);
+      }
+    });
   });
 })
 .catch(error => {
