@@ -1,5 +1,5 @@
-// Initialize the map in the #map div
-const map = L.map('map').setView([20, 0], 2);
+// Initialize the map in the #map div - we'll set the view after loading current location
+const map = L.map('map');
 
 // Add OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -23,6 +23,9 @@ Promise.all([
   fetch('data/locations.json').then(response => response.json())
 ])
 .then(([currentLocation, locations]) => {
+  // Set map view to current location with zoom level 8
+  map.setView([currentLocation.lat, currentLocation.lng], 8);
+
   // Add current location marker first
   const currentLocationMarker = L.marker([currentLocation.lat, currentLocation.lng], {
     icon: starIcon,
