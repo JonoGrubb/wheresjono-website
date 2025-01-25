@@ -17,8 +17,17 @@ h1 {
 }
 
 .star-icon {
-  font-size: 40px;
-  text-align: center;
-  line-height: 40px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  width: 40px;
+  height: 40px;
+  /* Center the star within the div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Adjust the positioning relative to the actual location point */
+  margin-left: -20px;  /* equivalent to iconAnchor[0] */
+  margin-top: -20px;   /* equivalent to iconAnchor[1] */
+}
+
+.star-icon + .leaflet-popup {
+  margin-bottom: 20px; /* equivalent to popupAnchor[1] */
 }
