@@ -922,5 +922,572 @@
     "lng": -120.1861956,
     "description": "",
     "lastVisitDate": "Saturday, January 14, 2023"
+  },
+  {
+    "name": "Arusi, Colombia",
+    "lat": 5.59544,
+    "lng": -77.47378800000001,
+    "description": "",
+    "lastVisitDate": "Tuesday, January 2, 2024"
+  },
+  {
+    "name": "Salento, Colombia",
+    "lat": 4.637365,
+    "lng": -75.5703107,
+    "description": "",
+    "lastVisitDate": "Friday, January 12, 2024"
+  },
+  {
+    "name": "Guatape, Colombia",
+    "lat": 6.2337643,
+    "lng": -75.1592213,
+    "description": "",
+    "lastVisitDate": "Friday, January 26, 2024"
+  },
+  {
+    "name": "Medellin, Colombia",
+    "lat": 6.2476376,
+    "lng": -75.56581530000001,
+    "description": "",
+    "lastVisitDate": "Sunday, January 28, 2024"
+  },
+  {
+    "name": "New York, New York",
+    "lat": 40.7127753,
+    "lng": -74.0059728,
+    "description": "",
+    "lastVisitDate": "Friday, February 2, 2024"
+  },
+  {
+    "name": "Tokyo, Japan",
+    "lat": 35.6764225,
+    "lng": 139.650027,
+    "description": "",
+    "lastVisitDate": "Friday, February 9, 2024"
+  },
+  {
+    "name": "Sendai, Japan",
+    "lat": 38.268195,
+    "lng": 140.869418,
+    "description": "",
+    "lastVisitDate": "Sunday, February 11, 2024"
+  },
+  {
+    "name": "Niseko, Japan",
+    "lat": 42.8047856,
+    "lng": 140.6874494,
+    "description": "",
+    "lastVisitDate": "Monday, February 12, 2024"
+  },
+  {
+    "name": "Taichung, Taiwan",
+    "lat": 24.1629765,
+    "lng": 120.6746104,
+    "description": "",
+    "lastVisitDate": "Saturday, February 17, 2024"
+  },
+  {
+    "name": "Kaohsuing, Taiwan",
+    "lat": 22.6272772,
+    "lng": 120.3014375,
+    "description": "",
+    "lastVisitDate": "Monday, February 19, 2024"
+  },
+  {
+    "name": "Nanwan, Taiwan",
+    "lat": 21.9648455,
+    "lng": 120.7588785,
+    "description": "",
+    "lastVisitDate": "Tuesday, February 20, 2024"
+  },
+  {
+    "name": "Taipei, Taiwan",
+    "lat": 25.0329694,
+    "lng": 121.5654177,
+    "description": "",
+    "lastVisitDate": "Thursday, February 22, 2024"
+  },
+  {
+    "name": "Christchurch, New Zealand",
+    "lat": -43.5320301,
+    "lng": 172.636648,
+    "description": "",
+    "lastVisitDate": "Saturday, February 24, 2024"
+  },
+  {
+    "name": "Hanmer Springs, New Zealand",
+    "lat": -42.5255877,
+    "lng": 172.8289005,
+    "description": "",
+    "lastVisitDate": "Wednesday, February 28, 2024"
+  },
+  {
+    "name": "Castle Hill, New Zealand",
+    "lat": -43.2085943,
+    "lng": 171.7178396,
+    "description": "",
+    "lastVisitDate": "Friday, March 1, 2024"
+  },
+  {
+    "name": "Methven, New Zealand",
+    "lat": -43.6324759,
+    "lng": 171.6471548,
+    "description": "",
+    "lastVisitDate": "Saturday, March 2, 2024"
+  },
+  {
+    "name": "Alexandria, New Zealand",
+    "lat": -45.2478653,
+    "lng": 169.3843692,
+    "description": "",
+    "lastVisitDate": "Tuesday, March 5, 2024"
+  },
+  {
+    "name": "Queenstown, New Zealand",
+    "lat": -45.0301511,
+    "lng": 168.6615141,
+    "description": "",
+    "lastVisitDate": "Thursday, March 7, 2024"
+  },
+  {
+    "name": "Te Anau, New Zealand",
+    "lat": -45.41442929999999,
+    "lng": 167.7180426,
+    "description": "",
+    "lastVisitDate": "Thursday, March 14, 2024"
+  },
+  {
+    "name": "Wanaka, New Zealand",
+    "lat": -44.6942992,
+    "lng": 169.1417356,
+    "description": "",
+    "lastVisitDate": "Friday, March 15, 2024"
+  },
+  {
+    "name": "Franz Josef, New Zealand",
+    "lat": -43.3873509,
+    "lng": 170.1833467,
+    "description": "",
+    "lastVisitDate": "Saturday, March 16, 2024"
+  },
+  {
+    "name": "Punakaiki, New Zealand",
+    "lat": -42.1078699,
+    "lng": 171.3348482,
+    "description": "",
+    "lastVisitDate": "Sunday, March 17, 2024"
+  },
+  {
+    "name": "Westport, New Zealand",
+    "lat": -41.7554345,
+    "lng": 171.598726,
+    "description": "",
+    "lastVisitDate": "Monday, March 18, 2024"
+  },
+  {
+    "name": "Berlins, New Zealand",
+    "lat": -40.900557,
+    "lng": 174.885971,
+    "description": "",
+    "lastVisitDate": "Tuesday, March 19, 2024"
+  },
+  {
+    "name": "Seddonville, New Zealand",
+    "lat": -41.5507672,
+    "lng": 171.9885376,
+    "description": "",
+    "lastVisitDate": "Wednesday, March 20, 2024"
+  },
+  {
+    "name": "Murchison, New Zealand",
+    "lat": -41.8000753,
+    "lng": 172.3254688,
+    "description": "",
+    "lastVisitDate": "Thursday, March 21, 2024"
+  },
+  {
+    "name": "Nelson, New Zealand",
+    "lat": -41.2731754,
+    "lng": 173.2853843,
+    "description": "",
+    "lastVisitDate": "Friday, March 22, 2024"
+  },
+  {
+    "name": "Wellington, New Zealand",
+    "lat": -41.2923814,
+    "lng": 174.7787463,
+    "description": "",
+    "lastVisitDate": "Wednesday, March 27, 2024"
+  },
+  {
+    "name": "Whanganui, New Zealand",
+    "lat": -39.9295619,
+    "lng": 175.0467279,
+    "description": "",
+    "lastVisitDate": "Saturday, March 30, 2024"
+  },
+  {
+    "name": "Taupo, New Zealand",
+    "lat": -38.6842862,
+    "lng": 176.0704465,
+    "description": "",
+    "lastVisitDate": "Thursday, April 4, 2024"
+  },
+  {
+    "name": "Rotorua, New Zealand",
+    "lat": -38.1445987,
+    "lng": 176.2377669,
+    "description": "",
+    "lastVisitDate": "Saturday, April 6, 2024"
+  },
+  {
+    "name": "Tauranga, New Zealand",
+    "lat": -37.6869653,
+    "lng": 176.1654272,
+    "description": "",
+    "lastVisitDate": "Sunday, April 7, 2024"
+  },
+  {
+    "name": "Paihia, New Zealand",
+    "lat": -35.2821294,
+    "lng": 174.0910282,
+    "description": "",
+    "lastVisitDate": "Wednesday, April 10, 2024"
+  },
+  {
+    "name": "Pasadena, California",
+    "lat": 34.1458012,
+    "lng": -118.1488888,
+    "description": "",
+    "lastVisitDate": "Monday, April 15, 2024"
+  },
+  {
+    "name": "Lolo Pass, Montana",
+    "lat": 46.6351985,
+    "lng": -114.5798362,
+    "description": "",
+    "lastVisitDate": "Friday, June 7, 2024"
+  },
+  {
+    "name": "Fernie, BC",
+    "lat": 49.50404520000001,
+    "lng": -115.063065,
+    "description": "",
+    "lastVisitDate": "Monday, June 17, 2024"
+  },
+  {
+    "name": "Nelson, BC",
+    "lat": 49.4928119,
+    "lng": -117.2948343,
+    "description": "",
+    "lastVisitDate": "Saturday, June 22, 2024"
+  },
+  {
+    "name": "Nanaimo, BC",
+    "lat": 49.1658836,
+    "lng": -123.9400647,
+    "description": "",
+    "lastVisitDate": "Monday, July 8, 2024"
+  },
+  {
+    "name": "Cumberland, BC",
+    "lat": 49.618806,
+    "lng": -125.031269,
+    "description": "",
+    "lastVisitDate": "Friday, July 12, 2024"
+  },
+  {
+    "name": "Telluride, Colorado",
+    "lat": 37.9374939,
+    "lng": -107.8122852,
+    "description": "",
+    "lastVisitDate": "Thursday, July 25, 2024"
+  },
+  {
+    "name": "Silverthorne, Colorado",
+    "lat": 39.6296191,
+    "lng": -106.0712941,
+    "description": "",
+    "lastVisitDate": "Friday, August 2, 2024"
+  },
+  {
+    "name": "Porto, Portugal",
+    "lat": 41.1579438,
+    "lng": -8.629105299999999,
+    "description": "",
+    "lastVisitDate": "Monday, August 19, 2024"
+  },
+  {
+    "name": "Terras de Bouro, Portugal",
+    "lat": 41.7167409,
+    "lng": -8.306244399999999,
+    "description": "",
+    "lastVisitDate": "Sunday, August 25, 2024"
+  },
+  {
+    "name": "Cascais, Portugal",
+    "lat": 38.72370009999999,
+    "lng": -9.400614599999999,
+    "description": "",
+    "lastVisitDate": "Monday, August 26, 2024"
+  },
+  {
+    "name": "Estoril, Portugal",
+    "lat": 38.7133152,
+    "lng": -9.3936558,
+    "description": "",
+    "lastVisitDate": "Tuesday, August 27, 2024"
+  },
+  {
+    "name": "Salema, Portugal",
+    "lat": 37.0661278,
+    "lng": -8.823872099999999,
+    "description": "",
+    "lastVisitDate": "Wednesday, August 28, 2024"
+  },
+  {
+    "name": "Cannes, France",
+    "lat": 43.5539499,
+    "lng": 7.0170217,
+    "description": "",
+    "lastVisitDate": "Saturday, August 31, 2024"
+  },
+  {
+    "name": "Andorra la Vella, Andorra",
+    "lat": 42.50631740000001,
+    "lng": 1.5218355,
+    "description": "",
+    "lastVisitDate": "Sunday, September 1, 2024"
+  },
+  {
+    "name": "La Massana, Andorra",
+    "lat": 42.545625,
+    "lng": 1.5147392,
+    "description": "",
+    "lastVisitDate": "Monday, September 2, 2024"
+  },
+  {
+    "name": "Girona, Spain",
+    "lat": 41.9794005,
+    "lng": 2.8214264,
+    "description": "",
+    "lastVisitDate": "Thursday, September 5, 2024"
+  },
+  {
+    "name": "Finale Ligure, Italy",
+    "lat": 44.1741579,
+    "lng": 8.3537927,
+    "description": "",
+    "lastVisitDate": "Sunday, September 8, 2024"
+  },
+  {
+    "name": "Zurich, Switzerland",
+    "lat": 47.3768866,
+    "lng": 8.541694,
+    "description": "",
+    "lastVisitDate": "Thursday, September 19, 2024"
+  },
+  {
+    "name": "Saint-Gervais-les-Bains, France",
+    "lat": 45.892013,
+    "lng": 6.712187,
+    "description": "",
+    "lastVisitDate": "Sunday, September 22, 2024"
+  },
+  {
+    "name": "Salon-de-Provence, France",
+    "lat": 43.640199,
+    "lng": 5.097022,
+    "description": "",
+    "lastVisitDate": "Wednesday, September 25, 2024"
+  },
+  {
+    "name": "Nice, France",
+    "lat": 43.7101728,
+    "lng": 7.261953200000001,
+    "description": "",
+    "lastVisitDate": "Thursday, September 26, 2024"
+  },
+  {
+    "name": "Arvieux, France",
+    "lat": 44.767371,
+    "lng": 6.738928,
+    "description": "",
+    "lastVisitDate": "Saturday, September 28, 2024"
+  },
+  {
+    "name": "Maddalena, Italy",
+    "lat": 41.2165433,
+    "lng": 9.404858800000001,
+    "description": "",
+    "lastVisitDate": "Sunday, September 29, 2024"
+  },
+  {
+    "name": "Vernetti, Italy",
+    "lat": 44.4559857,
+    "lng": 7.097786999999999,
+    "description": "",
+    "lastVisitDate": "Monday, September 30, 2024"
+  },
+  {
+    "name": "Vinadio, Italy",
+    "lat": 44.3077779,
+    "lng": 7.176439199999999,
+    "description": "",
+    "lastVisitDate": "Tuesday, October 1, 2024"
+  },
+  {
+    "name": "Saint-Dalmas de Tende, France",
+    "lat": 44.089097,
+    "lng": 7.593454,
+    "description": "",
+    "lastVisitDate": "Wednesday, October 2, 2024"
+  },
+  {
+    "name": "Dolceacqua, Italy",
+    "lat": 43.8500349,
+    "lng": 7.623209300000001,
+    "description": "",
+    "lastVisitDate": "Thursday, October 3, 2024"
+  },
+  {
+    "name": "Bordighera, Italy",
+    "lat": 43.7796022,
+    "lng": 7.670155899999998,
+    "description": "",
+    "lastVisitDate": "Friday, October 4, 2024"
+  },
+  {
+    "name": "Athens, Greece",
+    "lat": 37.9838096,
+    "lng": 23.7275388,
+    "description": "",
+    "lastVisitDate": "Sunday, October 6, 2024"
+  },
+  {
+    "name": "Santorini, Greece",
+    "lat": 36.3931562,
+    "lng": 25.4615092,
+    "description": "",
+    "lastVisitDate": "Tuesday, October 8, 2024"
+  },
+  {
+    "name": "Paris, France",
+    "lat": 48.8575475,
+    "lng": 2.3513765,
+    "description": "",
+    "lastVisitDate": "Saturday, October 12, 2024"
+  },
+  {
+    "name": "Freestone, California",
+    "lat": 38.3724152,
+    "lng": -122.9155516,
+    "description": "",
+    "lastVisitDate": "Friday, November 1, 2024"
+  },
+  {
+    "name": "Monterrey, Mexico",
+    "lat": 25.6866142,
+    "lng": -100.3161126,
+    "description": "",
+    "lastVisitDate": "Thursday, November 7, 2024"
+  },
+  {
+    "name": "Oaxaca, Mexico",
+    "lat": 17.0731842,
+    "lng": -96.7265889,
+    "description": "",
+    "lastVisitDate": "Saturday, November 9, 2024"
+  },
+  {
+    "name": "San Pancho, Mexico",
+    "lat": 20.8965838,
+    "lng": -105.4093552,
+    "description": "",
+    "lastVisitDate": "Wednesday, November 13, 2024"
+  },
+  {
+    "name": "Puerto Vallarta, Mexico",
+    "lat": 20.6565177,
+    "lng": -105.211358,
+    "description": "",
+    "lastVisitDate": "Friday, November 15, 2024"
+  },
+  {
+    "name": "Templeton, California",
+    "lat": 35.5496939,
+    "lng": -120.7060049,
+    "description": "",
+    "lastVisitDate": "Sunday, November 24, 2024"
+  },
+  {
+    "name": "Redding, California",
+    "lat": 40.5865396,
+    "lng": -122.3916754,
+    "description": "",
+    "lastVisitDate": "Tuesday, November 26, 2024"
+  },
+  {
+    "name": "Osaka, Japan",
+    "lat": 34.6937249,
+    "lng": 135.5022535,
+    "description": "",
+    "lastVisitDate": "Monday, June 6, 2022"
+  },
+  {
+    "name": "Nagoya, Japan",
+    "lat": 35.18145060000001,
+    "lng": 136.9065571,
+    "description": "",
+    "lastVisitDate": "Monday, June 6, 2022"
+  },
+  {
+    "name": "Kyoto, Japan",
+    "lat": 35.011564,
+    "lng": 135.7681489,
+    "description": "",
+    "lastVisitDate": "Monday, June 6, 2022"
+  },
+  {
+    "name": "Odawara, Japan",
+    "lat": 35.2648307,
+    "lng": 139.1523086,
+    "description": "",
+    "lastVisitDate": "Monday, June 6, 2022"
+  },
+  {
+    "name": "Amsterdam, Netherlands",
+    "lat": 52.3675734,
+    "lng": 4.9041389,
+    "description": "",
+    "lastVisitDate": "Monday, June 6, 2022"
+  },
+  {
+    "name": "Miami, Florida",
+    "lat": 25.7616798,
+    "lng": -80.1917902,
+    "description": "",
+    "lastVisitDate": "Monday, June 6, 2022"
+  },
+  {
+    "name": "Mexico City, Mexico",
+    "lat": 19.4326077,
+    "lng": -99.133208,
+    "description": "",
+    "lastVisitDate": "Monday, June 6, 2022"
+  },
+  {
+    "name": "Cabo, Mexico",
+    "lat": 22.8948129,
+    "lng": -109.9152149,
+    "description": "",
+    "lastVisitDate": "Monday, June 6, 2022"
+  },
+  {
+    "name": "Grand Canyon Village, Arizona",
+    "lat": 36.0544445,
+    "lng": -112.1401108,
+    "description": "",
+    "lastVisitDate": "Saturday, January 18, 2025"
   }
 ]
