@@ -735,13 +735,6 @@
     "lastVisitDate": "Sunday, February 13, 2022"
   },
   {
-    "name": "SLC Airport, Utah",
-    "lat": 40.7909957,
-    "lng": -111.9767932,
-    "description": "",
-    "lastVisitDate": "Tuesday, March 15, 2022"
-  },
-  {
     "name": "Southport, Conneticut",
     "lat": 41.1367397,
     "lng": -73.2834873,
@@ -2096,6 +2089,104 @@
     "name": "Copenhagen, Denmark",
     "lat": 55.6760968,
     "lng": 12.5683371,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Castlegar, BC",
+    "lat": 49.3237064,
+    "lng": -117.6593832,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Redlands, California",
+    "lat": 34.0555693,
+    "lng": -117.1825381,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Los Angeles, California", 
+    "lat": 34.0522342,
+    "lng": -118.2436849,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Manteca, California",
+    "lat": 37.7974273,
+    "lng": -121.2160526,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Hayward, California", 
+    "lat": 37.6688205,
+    "lng": -122.0807964,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "San Jose, California",
+    "lat": 37.3382082,
+    "lng": -121.8863286,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Palo Alto, California",
+    "lat": 37.4418834,
+    "lng": -122.1430195,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "San Francisco, California",
+    "lat": 37.7749295,
+    "lng": -122.4194155,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Morro Bay, California",
+    "lat": 35.3659445,
+    "lng": -120.8499924,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Avila Beach, California",
+    "lat": 35.1797139,
+    "lng": -120.7319722,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Monterey, California",
+    "lat": 36.6002378,
+    "lng": -121.8946761,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Santa Cruz, California",
+    "lat": 36.9741171,
+    "lng": -122.0307963,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Ojai, California",
+    "lat": 34.4480495,
+    "lng": -119.2428839,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "China Peak, California",
+    "lat": 37.2366155,
+    "lng": -119.1584384,
     "description": "",
     "lastVisitDate": ""
   }
