@@ -364,13 +364,6 @@
     "lastVisitDate": "Saturday, November 11, 2023"
   },
   {
-    "name": "IAH Airport, Texas",
-    "lat": 29.9463522,
-    "lng": -95.3313586,
-    "description": "",
-    "lastVisitDate": "Friday, November 11, 2022"
-  },
-  {
     "name": "Ketchum, Idaho",
     "lat": 43.6807402,
     "lng": -114.3636619,
@@ -2187,6 +2180,13 @@
     "name": "China Peak, California",
     "lat": 37.2366155,
     "lng": -119.1584384,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Mesquite, Nevada",
+    "lat": 36.8052805,
+    "lng": -114.1306359,
     "description": "",
     "lastVisitDate": ""
   }
