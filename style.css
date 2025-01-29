@@ -1,24 +1,35 @@
+/* Base page styles */
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* Base font size for better mobile readability */
-  font-size: 16px;
+  font-size: 16px; /* Base font for desktop */
+  font-family: Arial, Helvetica, sans-serif; /* Or any clean sans-serif */
+  color: #333;
 }
 
-#map {
-    width: 100%;
-    /* The map needs some height to become visible */
-    height: calc(100% - 60px); /* Slightly more space for header on mobile */
-  }
-
-h1 {
+/* Header styling */
+header {
+  background-color: #fafafa; /* Light background */
   text-align: center;
-  margin: 15px 0;
-  font-size: 1.8rem; /* Using rem for responsive font sizing */
+  padding: 15px 0; /* Vertical padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-bottom: 1px solid #ddd; /* Extra definition */
 }
 
+header h1 {
+  margin: 0; /* Remove default margin, using header padding instead */
+  font-size: 1.8rem; /* Responsive-friendly units */
+}
+
+/* The map container */
+#map {
+  width: 100%;
+  height: calc(100% - 60px);
+}
+
+/* Icon styling (unchanged) */
 .star-icon {
   width: 40px;
   height: 40px;
@@ -30,23 +41,22 @@ h1 {
 }
 
 .star-icon span {
-  font-size: 32px; /* Base size for desktop */
+  font-size: 32px;
 }
 
 .star-icon + .leaflet-popup {
-  margin-bottom: 20px; /* equivalent to popupAnchor[1] */
+  margin-bottom: 20px;
 }
 
 /* Mobile-specific adjustments */
 @media screen and (max-width: 768px) {
   html,
   body {
-    font-size: 18px; /* Larger base font size for mobile */
+    font-size: 18px; /* Slightly larger font for mobile */
   }
 
-  h1 {
+  header h1 {
     font-size: 1.5rem;
-    margin: 12px 0;
   }
 
   .star-icon {
@@ -57,7 +67,7 @@ h1 {
   }
 
   .star-icon span {
-    font-size: 36px; /* Larger size for mobile */
+    font-size: 36px;
   }
 
   /* Make popup content more readable on mobile */
