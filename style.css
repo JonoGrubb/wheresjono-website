@@ -23,14 +23,6 @@ header h1 {
   font-size: 1.8rem;
 }
 
-/* Add styles for the playful tagline */
-.tagline {
-  margin: 3px 0 0;
-  font-size: 0.8rem;    /* A bit smaller than the main heading */
-  font-style: italic;  /* A playful, subtle emphasis */
-  color: #555;         /* Slightly subdued color */
-}
-
 /* The map container */
 #map {
   width: 100%;
