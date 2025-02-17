@@ -2189,5 +2189,19 @@
     "lng": -114.1306359,
     "description": "",
     "lastVisitDate": ""
+  },
+  {
+    "name": "Prague, Czech Republic",
+    "lat": 50.0755381,
+    "lng": 14.4378005,
+    "description": "",
+    "lastVisitDate": "Friday, Feb 7, 2025"
+  },
+  {
+    "name": "Milan, Italy",
+    "lat": 45.4642035,
+    "lng": 9.189982,
+    "description": "",
+    "lastVisitDate": "Sunday, Feb 15, 2026"
   }
 ]
