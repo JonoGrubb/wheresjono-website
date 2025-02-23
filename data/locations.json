@@ -2210,5 +2210,12 @@
     "lng": 11.5500000,
     "description": "",
     "lastVisitDate": "Sunday, Feb 16, 2025"
-  }
+  },
+  {
+    "name": "Reykjavík, Iceland",
+    "lat": 64.1466,
+    "lng": -21.9426,
+    "description": "",
+    "lastVisitDate": "Sunday, Feb 23, 2025"
+  } 
 ]
