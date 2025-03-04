@@ -599,7 +599,7 @@
     "lat": 45.515232,
     "lng": -122.6783853,
     "description": "",
-    "lastVisitDate": "Tuesday, November 21, 2023"
+    "lastVisitDate": "Tuesday, March 4, 2025"
   },
   {
     "name": "Prescott, Arizona",
@@ -2231,5 +2231,12 @@
     "lng": -20.5902346,
     "description": "",
     "lastVisitDate": "Tuesday, Feb 25, 2025"
+  },
+  {
+    "name": "Skaftafelli, Iceland",
+    "lat": 63.98952645673763,
+    "lng": -16.89756594463941,
+    "description": "",
+    "lastVisitDate": "Thursday, Feb 27, 2025"
   }
 ]
