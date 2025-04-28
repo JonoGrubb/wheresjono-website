@@ -2238,5 +2238,19 @@
     "lng": -16.89756594463941,
     "description": "",
     "lastVisitDate": "Thursday, Feb 27, 2025"
+  },
+  {
+    "name": "Lanzarote (Canary Islands)",
+    "lat": 29.0469,
+    "lng": -13.5900,
+    "description": "",
+    "lastVisitDate": "Thursday, April 17, 2025"
+  },
+  {
+    "name": "London, United Kingdom",
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "description": "",
+    "lastVisitDate": "Friday, April 25, 2025"
   }
 ]
