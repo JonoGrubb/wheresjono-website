@@ -2371,5 +2371,19 @@
     "lng": -107.8762,
     "description": "",
     "lastVisitDate": ""
+  },
+  {
+    "name": "Roswell, New Mexico",
+    "lat": 33.3940,
+    "lng": -104.5230,
+    "description": "",
+    "lastVisitDate": ""
+  },
+  {
+    "name": "Burnet, Texas",
+    "lat": 30.7574,
+    "lng": -98.2284,
+    "description": "",
+    "lastVisitDate": ""
   }
 ]
