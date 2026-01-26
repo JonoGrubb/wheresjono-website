@@ -1,10 +1,11 @@
 // Initialize the map in the #map div - we'll set the view after loading current location
 const map = L.map('map');
 
-// Add OpenStreetMap tiles
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// Add CartoDB Positron tiles (English labels everywhere)
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   attribution:
-    'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains: 'abcd',
   maxZoom: 19
 }).addTo(map);
 
