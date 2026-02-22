@@ -2448,5 +2448,19 @@
     "lng": -9.1393,
     "description": "",
     "lastVisitDate": "Sunday, February 8, 2026"
+  },
+  {
+    "name": "Krakow, Poland",
+    "lat": 50.0647,
+    "lng": 19.9450,
+    "description": "",
+    "lastVisitDate": "Sunday, February 15, 2026"
+  },
+  {
+    "name": "Oświęcim, Poland",
+    "lat": 50.0343,
+    "lng": 19.2104,
+    "description": "",
+    "lastVisitDate": "Saturday, February 21, 2026"
   }
 ]
