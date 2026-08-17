@@ -2483,5 +2483,19 @@
     "lng": -116.1148903,
     "description": "",
     "lastVisitDate": "Sunday, April 19, 2026"
+  },
+  {
+    "name": "Brian Head, Utah",
+    "lat": 37.6942,
+    "lng": -112.8499,
+    "description": "",
+    "lastVisitDate": "Sunday, August 2, 2026"
+  },
+  {
+    "name": "Leadville, Colorado",
+    "lat": 39.2508,
+    "lng": -106.2925,
+    "description": "",
+    "lastVisitDate": "Monday, August 17, 2026"
   }
 ]
