@@ -64,9 +64,7 @@ Promise.all([
   new maplibregl.Marker({ element: createStarElement(), anchor: 'center' })
     .setLngLat(currentLngLat)
     .setPopup(new maplibregl.Popup({ offset: 20 }).setHTML(
-      `<strong>${currentLocation.name}</strong><br>
-      ${currentLocation.description}<br>
-      Last updated: ${new Date(currentLocation.lastUpdate).toLocaleDateString()}`
+      `<strong>${currentLocation.name}</strong><br>${currentLocation.description}`
     ))
     .addTo(map);
 })
