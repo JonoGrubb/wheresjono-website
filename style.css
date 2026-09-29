@@ -27,6 +27,7 @@ header h1 {
 #map {
   width: 100%;
   height: calc(100% - 60px);
+  background-color: #eef1f4; /* Space around the globe */
 }
 
 /* Icon styling (unchanged) */
@@ -36,16 +37,20 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -20px;
-  margin-top: -20px;
+  cursor: pointer;
 }
 
 .star-icon span {
   font-size: 32px;
 }
 
-.star-icon + .leaflet-popup {
-  margin-bottom: 20px;
+/* Markers on the far side of the globe (MapLibre adds this class) */
+.maplibregl-marker-covered {
+  pointer-events: none;
+}
+
+.hide-covered-markers .maplibregl-marker-covered {
+  visibility: hidden;
 }
 
 /* Mobile-specific adjustments */
@@ -62,8 +67,6 @@ header h1 {
   .star-icon {
     width: 48px;
     height: 48px;
-    margin-left: -32px;
-    margin-top: -32px;
   }
 
   .star-icon span {
@@ -71,7 +74,7 @@ header h1 {
   }
 
   /* Make popup content more readable on mobile */
-  .leaflet-popup-content {
+  .maplibregl-popup-content {
     font-size: 1.1rem;
     padding: 5px;
   }

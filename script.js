@@ -1,26 +1,37 @@
-// CARTO Basemaps key. This is public by design (it's sent with every tile request);
-// it's restricted to wheresjono.com in the CARTO dashboard, so it won't work elsewhere.
-const CARTO_API_KEY = 'cb1_43n8_1_16e8d8f5d3faf0f145c1ad0a';
+// CARTO Positron vector style (English labels when zoomed out).
+// Vector basemaps don't need a CARTO API key yet; CARTO has said they will in future.
+const POSITRON_STYLE = 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json';
 
 // Initialize the map in the #map div - we'll set the view after loading current location
-const map = L.map('map');
-
-// Add CartoDB Positron tiles (English labels everywhere)
-L.tileLayer(`https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=${CARTO_API_KEY}`, {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  subdomains: 'abcd',
-  maxZoom: 19
-}).addTo(map);
-
-// Create a star icon for current location
-const starIcon = L.divIcon({
-  html: '<span>⭐</span>',
-  className: 'star-icon',
-  iconSize: null,    // Let CSS handle the sizing
-  iconAnchor: null,  // Let CSS handle the positioning
-  popupAnchor: [0, -20]
+const map = new maplibregl.Map({
+  container: 'map',
+  style: POSITRON_STYLE,
+  center: [0, 20],
+  zoom: 1.5
 });
+
+map.addControl(new maplibregl.NavigationControl());
+
+// Show the world as a globe when zoomed out; it flattens as you zoom in
+map.on('style.load', () => {
+  map.setProjection({ type: 'globe' });
+});
+
+// Markers on the far side of the globe show faintly when zoomed out, but are
+// hidden when zoomed in so they don't clutter the map (see style.css)
+const HIDE_COVERED_MARKERS_ZOOM = 3;
+function updateCoveredMarkers() {
+  map.getContainer().classList.toggle('hide-covered-markers', map.getZoom() >= HIDE_COVERED_MARKERS_ZOOM);
+}
+map.on('zoom', updateCoveredMarkers);
+
+// Create a star element for the current location marker
+function createStarElement() {
+  const el = document.createElement('div');
+  el.className = 'star-icon';
+  el.innerHTML = '<span>⭐</span>';
+  return el;
+}
 
 // Load both files and process after both are loaded
 Promise.all([
@@ -28,47 +39,36 @@ Promise.all([
   fetch('data/locations.json').then(response => response.json())
 ])
 .then(([currentLocation, locations]) => {
-  // Set map view to current location with zoom level 8
-  map.setView([currentLocation.lat, currentLocation.lng], 8);
+  const currentLngLat = new maplibregl.LngLat(currentLocation.lng, currentLocation.lat);
 
-  // Add current location marker first
-  const currentLocationMarker = L.marker([currentLocation.lat, currentLocation.lng], {
-    icon: starIcon,
-    zIndexOffset: 1000
-  }).addTo(map);
-  
-  currentLocationMarker.bindPopup(
-    `<strong>${currentLocation.name}</strong><br>
-    ${currentLocation.description}<br>
-    Last updated: ${new Date(currentLocation.lastUpdate).toLocaleDateString()}`
-  );
+  // Center on current location, zoomed out enough to see the globe
+  map.jumpTo({ center: currentLngLat, zoom: 1.8 });
 
-  // Add other locations, checking for overlap
+  // Add other locations first so the star draws on top of them
   locations.forEach(location => {
-    const currentLatLng = currentLocationMarker.getLatLng();
-    
-    // Create array of wrapped longitudes
-    const wrappedLongitudes = [
-      location.lng,
-      location.lng - 360,
-      location.lng + 360
-    ];
+    const lngLat = new maplibregl.LngLat(location.lng, location.lat);
 
-    wrappedLongitudes.forEach(wrappedLng => {
-      const wrappedLatLng = L.latLng(location.lat, wrappedLng);
-      const distance = currentLatLng.distanceTo(wrappedLatLng);
-      
-      console.log(`Distance from current location to ${location.name} (lng: ${wrappedLng}): ${distance.toFixed(2)}m`);
-      
-      // Only add marker if it's not too close
-      if (distance >= 25000) {
-        const marker = L.marker([location.lat, wrappedLng]).addTo(map);
-        marker.bindPopup(`<strong>${location.name}</strong><br>${location.description}`);
-      } else {
-        console.log(`Skipping marker for ${location.name} at lng ${wrappedLng} - too close to current location`);
-      }
-    });
+    // Only add marker if it's not too close to the current location
+    if (currentLngLat.distanceTo(lngLat) < 25000) {
+      return;
+    }
+
+    new maplibregl.Marker({ color: '#3b82f6', scale: 0.7 })
+      .setLngLat(lngLat)
+      .setPopup(new maplibregl.Popup({ offset: 20 }).setHTML(
+        `<strong>${location.name}</strong><br>${location.description}`
+      ))
+      .addTo(map);
   });
+
+  new maplibregl.Marker({ element: createStarElement(), anchor: 'center' })
+    .setLngLat(currentLngLat)
+    .setPopup(new maplibregl.Popup({ offset: 20 }).setHTML(
+      `<strong>${currentLocation.name}</strong><br>
+      ${currentLocation.description}<br>
+      Last updated: ${new Date(currentLocation.lastUpdate).toLocaleDateString()}`
+    ))
+    .addTo(map);
 })
 .catch(error => {
   console.error('Error loading data:', error);
