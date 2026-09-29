@@ -1,8 +1,12 @@
+// CARTO Basemaps key. This is public by design (it's sent with every tile request);
+// it's restricted to wheresjono.com in the CARTO dashboard, so it won't work elsewhere.
+const CARTO_API_KEY = 'cb1_43n8_1_16e8d8f5d3faf0f145c1ad0a';
+
 // Initialize the map in the #map div - we'll set the view after loading current location
 const map = L.map('map');
 
 // Add CartoDB Positron tiles (English labels everywhere)
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+L.tileLayer(`https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=${CARTO_API_KEY}`, {
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
   subdomains: 'abcd',
